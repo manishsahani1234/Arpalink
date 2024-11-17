@@ -1,7 +1,7 @@
 # Arpalink - Your Local Search Partner
 
 ## Overview
-The Arpalink Your Local Search Partner(Service Provider) is a Java-based application that  This application utilizes a MySQL database to store local service information.
+The Arpalink Your Local Search Partner(Service Provider) is a Java-based application that is a smart local search platform that connects you to nearby local services, and products. Whether it's a restaurant, hospital, or expert services, Arpalink is your one-stop solution. With just a few clicks, access detailed information and contact services directly for all your needs. This application utilizes a MySQL database to store local service information.
 
 ## Project Structure
 /arpalink-user-management 
