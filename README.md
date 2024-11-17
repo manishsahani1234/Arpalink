@@ -68,8 +68,13 @@ mvn clean install
 You can run the application by executing the main class
 
 ## Features
-1. e
-2. w
-3. w
-4. 
+1. user id
+2. username
+3. password
+4. email
+
+## Troubleshooting
+**Database Connection Issues:** Ensure that your MySQL server is running
+**SQL Exceptions:** Verify the SQL syntax and ensure that the database schema matches the expected structure.
+**Dependency Issues:** If you encounter issues with Maven dependencies, ensure you have an active internet connection and that your Maven settings are correctly configured.
 
