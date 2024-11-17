@@ -1,4 +1,4 @@
-# Arpalink User Management System
+# Arpalink - Your Local Search Partner
 
 ## Overview
 The Arpalink User Management System is a Java-based application that allows users to manage their accounts, including adding new users and retrieving a list of all registered users. This application utilizes a MySQL database to store user information.
