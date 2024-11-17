@@ -1,7 +1,7 @@
 # Arpalink - Your Local Search Partner
 
 ## Overview
-The Arpalink User Management System is a Java-based application that allows users to manage their accounts, including adding new users and retrieving a list of all registered users. This application utilizes a MySQL database to store user information.
+The Arpalink Your Local Search Partner(Service Provider) is a Java-based application that  This application utilizes a MySQL database to store local service information.
 
 ## Project Structure
 /arpalink-user-management 
