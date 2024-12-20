@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 CREATE DATABASE arpalinkdb;
 USE arpalinkdb;
+=======
+CREATE DATABASE arpalinkDB;
+USE arpalinkDB;
+>>>>>>> b9674ee0cdf422eb9aed0a9c515a80064a56769c
 
 -- Users Table
 CREATE TABLE Users (
@@ -109,4 +114,8 @@ VALUES (1, 'Dine-in Service', 20.00);
 
 -- Adding business hours
 INSERT INTO BusinessHours (business_id, day_of_week, open_time, close_time) 
+<<<<<<< HEAD
 VALUES (1, 'Monday', '09:00:00', '22:00:00');
+=======
+VALUES (1, 'Monday', '09:00:00', '22:00:00');
+>>>>>>> b9674ee0cdf422eb9aed0a9c515a80064a56769c
