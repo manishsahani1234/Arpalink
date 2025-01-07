@@ -1,0 +1,21 @@
+package com.arpalink.dao;
+
+import com.arpalink.model.User;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class UserDaoTest {
+    @Test
+    public void testAddUser () {
+        UserDao userDao = new UserDao();
+        User user = new User();
+        user.setUsername("testUser ");
+        user.setPassword("testPass");
+        user.setEmail("test@example.com");
+
+        userDao.addUser (user);
+        assertEquals(1, userDao.getAllUsers().size());
+        assertEquals("testUser ", userDao.getAllUsers().get(0).getUsername());
+    }
+}

@@ -1,0 +1,51 @@
+1. Project Overview
+Title: Arpalink - A Local Service Provider
+
+Description: Arpalink is a web application designed to facilitate local service provider registration and user profile management. Users can register with their details and view their profiles.
+
+2. Features
+User registration with validation.
+Display of user profile information.
+Simple and intuitive user interface.
+
+3. Installation Instructions
+Prerequisites:
+
+Java Development Kit (JDK) 11 
+Apache Maven 3.6 
+An IDE (Eclipse,).
+
+
+Steps to Set Up:
+Clone the repository:
+
+
+
+git clone 
+cd arpalink
+Build the project using Maven:
+
+
+mvn clean install
+Deploy the WAR file to a servlet container  Apache Tomcat.
+
+
+4. Usage Instructions
+Open a web browser and navigate to https://github.com/manishsahani1234/Arpalink
+Fill in the registration form with a username, password, and email.
+Click the "Register" button to create a new user.
+After registration, the user will be redirected to their profile page, displaying their information.
+
+
+
+5. Unit Testing
+Unit tests are included for the DAO and service layers.
+To run the tests, use the following command:
+
+
+mvn test
+
+6. Contribution Guidelines
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+

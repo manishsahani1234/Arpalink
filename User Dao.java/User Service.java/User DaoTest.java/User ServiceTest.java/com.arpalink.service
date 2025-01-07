@@ -1,0 +1,22 @@
+package com.arpalink.service;
+
+import com.arpalink.dao.UserDao;
+import com.arpalink.model.User;
+import org.junit.jupiter.api.Test;
+
+import static org.junit.jupiter.api.Assertions.assertEquals;
+
+public class UserServiceTest {
+    @Test
+    public void testRegisterUser () {
+        UserService userService = new UserService();
+        User user = new User();
+        user.setUsername("testUser ");
+        user.setPassword("testPass");
+        user.setEmail("test@example.com");
+
+        userService.registerUser (user);
+        assertEquals(1, userService.getAllUsers().size());
+        assertEquals("testUser ", userService.getAllUsers().get(0).getUsername());
+    }
+}
