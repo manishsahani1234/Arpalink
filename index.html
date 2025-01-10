@@ -1,97 +1,93 @@
+<<<<<<< HEAD
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Arpalink - A Local Service Provider</title>
-    <link rel="stylesheet" href="/static/css/styles.css">
-    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Arpalink</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
 </head>
-
 <body>
-    <div class="container">
-        <header>
-            <h1>Arpalink - A Local Service Provider</h1>
-        </header>
-
-        <!-- Login Section -->
-        <section id="loginSection">
-            <form id="loginForm" class="form-card">
-                <div class="input-group">
-                    <label for="username">Username </label>
-                    <input type="text" id="username" name="username" required minlength="3" maxlength="50" placeholder="Enter your username">
-                </div>
-                <div class="input-group">
-                    <label for="password">Password</label>
-                    <input type="password" id="password" name="password" required minlength="8" placeholder="Enter your password">
-                </div>
-                <button type="submit" class="login-btn">Login</button>
-                <div id="loginError" class="error-message"></div>
-            </form>
-        </section>
-
-        <!-- Dashboard Section -->
-        <section id="dashboardSection" class="hidden">
-            <div class="dashboard-header">
-                <h2 id="welcomeMessage"></h2>
-                <button id="logoutBtn" class="logout-btn">Logout</button>
-            </div>
-
-            <!-- Navigation Tabs -->
-            <nav class="dashboard-tabs">
-                <button data-tab="appointments" class="tab-btn active">Appointments</button>
-                <button data-tab="reports" class="tab-btn">Service Reports</button>
-                <button data-tab="profile" class="tab-btn">Profile</button>
+    <header>
+        <div class="container">
+            <h1>Arpalink</h1>
+            <nav>
+                <input type="text" placeholder="Search here.." class="search-bar">
+                <button class="login-btn">Login / Sign Up</button>
+                <button class="price-btn">Get Best Price</button>
             </nav>
-
-            <!-- Tab Contents -->
-            <div class="tab-content">
-                <!-- Appointments Tab -->
-                <div id="appointmentsTab" class="tab active">
-                    <div class="section-header">
-                        <h3>Manage Appointments</h3>
-                        <button id="bookAppointmentBtn" class="action-btn">Book New Appointment</button>
-                    </div>
-                    <div id="appointmentsList"></div>
+        </div>
+    </header>
+    <main>
+        <div class="categories">
+            <button>Home</button>
+            <button>All Categories</button>
+            <button>Electronics</button>
+            <button>Restaurant</button>
+            <button>Hospital</button>
+            <button>Agriculture</button>
+            <button>Shopping Mall</button>
+        </div>
+        <div class="more-categories">
+            <h2>More Categories</h2>
+            <div class="icons">
+                <div>
+                    <img src="restaurant.png" alt="Restaurants">
+                    <p>Restaurants</p>
                 </div>
-
-                <!-- Service Reports Tab -->
-                <div id="reportsTab" class="tab">
-                    <div class="section-header">
-                        <h3>Service Reports</h3>
-                    </div>
-                    <div id="reportsList"></div>
+                <div>
+                    <img src="loans.png" alt="Loans">
+                    <p>Loans</p>
                 </div>
-
-                <!-- Profile Tab -->
-                <div id="profileTab" class="tab">
-                    <div class="section-header">
-                        <h3>User Profile</h3>
-                    </div>
-                    <div id="profileDetails"></div>
+                <div>
+                    <img src="education.png" alt="Education">
+                    <p>Education</p>
+                </div>
+                <div>
+                    <img src="gym.png" alt="Gym">
+                    <p>Gym</p>
+                </div>
+                <div>
+                    <img src="school.png" alt="School">
+                    <p>School</p>
+                </div>
+                <div>
+                    <img src="jobs.png" alt="Jobs">
+                    <p>Jobs</p>
+                </div>
+            </div>
+        </div>
+        <section class="deals">
+            <h2>Best Deals For Hospitals</h2>
+            <div class="deal-cards">
+                <div class="card">
+                    <img src="hospital-lift.jpg" alt="Hospital Lift">
+                    <h3>Hospital Lift</h3>
+                    <p>₹ 2 L - ₹ 32 L/Pc</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card">
+                    <img src="hospital-apparatus.jpg" alt="Hospital Apparatus">
+                    <h3>Hospital Apparatus</h3>
+                    <p>₹ 2 L - ₹ 32 L/Pc</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card">
+                    <img src="hospital-elevator.jpg" alt="Hospital Elevator">
+                    <h3>Hospital Elevator</h3>
+                    <p>₹ 2 L - ₹ 32 L/Pc</p>
+                    <button>Contact</button>
+                </div>
+                <div class="card">
+                    <img src="hospital-lift.jpg" alt="Hospital Lift">
+                    <h3>Hospital Lift</h3>
+                    <p>₹ 2 L - ₹ 32 L/Pc</p>
+                    <button>Contact</button>
                 </div>
             </div>
         </section>
-    </div>
-
-    <!-- Modals -->
-    <div id="appointmentModal" class="modal hidden">
-        <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h2>Book Appointment</h2>
-            <form id="appointmentForm">
-                <div class="input-group">
-                    <label for="appointmentDate">Select Date</label>
-                    <input type="date" id="appointmentDate" required>
-                </div>
-                <button type="submit" class="submit-btn">Confirm Booking</button>
-            </form>
-        </div>
-    </div>
-
-    <script src="/static/js/app.js"></script>
+    </main>
 </body>
-
 </html>
+
