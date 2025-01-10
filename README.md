@@ -9,41 +9,179 @@
 The Arpalink Your Local Search Partner(Service Provider) is a Java-based application that is a smart local search platform that connects you to nearby local services, and products. Whether it's a restaurant, hospital, or expert services, Arpalink is your one-stop solution. With just a few clicks, access detailed information and contact services directly for all your needs. This application utilizes a MySQL database to store local service information.
 
 ## Project Structure
-/arpalink-user-management 
-│ ├── src 
+📦 arpalink
 
-│ ├── main 
+├─ Final Review of the Project
 
-│ │ ├── java
+│  ├─ Project Documentation
 
-│ │ │ └── com
+│  │  └─ documentation.docs
 
-│ │ │ └── arpalink
+│  └─ project review.docs
 
-│ │ │ ├── dao
+├─ README.md
 
-│ │ │ │ ├── Databaseutil.java
+├─ User Dao.java
 
-│ │ │ │ └── UserDao.java
+│  ├─ User .java
 
-│ │ │ └── model
+│  ├─ User Service.java
 
-│ │ │ └── User.java
+│  │  ├─ User DaoTest.java
 
-│ │ └── resources
+│  │  │  ├─ User ServiceTest.java
 
-│ └── test
+│  │  │  │  └─ com.arpalink.service
 
-│ └── java
+│  │  │  └─ com.arpalink.dao
 
-│ ├── target
+│  │  ├─ User Service.java
 
-│ ├── classes
+│  │  └─ com.arpalink.service
 
-│ └── test-classes
+│  └─ com.arpalink.dao
 
-│ └── .classpath
+├─ index.html
 
+├─ maven-status
+
+│  └─ maven-compiler-plugin
+
+│     └─ compile
+
+│        └─ default-compile
+
+│           ├─ createdFiles.lst
+
+│           └─ inputFiles.lst
+
+├─ pom.xml
+
+├─ schema.sql
+
+├─ script.js
+
+├─ src
+
+│  └─ main
+
+│     ├─ java
+
+│     │  └─ com
+
+│     │     └─ arpalink
+
+│     │        ├─ dao
+
+│     │        │  ├─ Databaseutil.java
+
+│     │        │  └─ UserDao.java
+
+│     │        └─ model
+
+│     │           └─ User.java
+
+│     └─ webapp
+
+│        ├─ META-INF
+
+│        │  └─ MANIFEST.MF
+
+│        ├─ WEB-INF
+
+│        │  └─ web.xml
+
+│        ├─ edit.jsp
+
+│        ├─ index.jsp
+
+│        ├─ login.jsp
+
+│        ├─ services.jsp
+
+│        ├─ user-form.jsp
+
+│        ├─ view.jsp
+
+│        └─ welcome.jsp
+
+├─ style.css
+
+├─ target
+
+│  ├─ Servlet Class
+
+│  │  └─ RegistrationServlet.java
+
+│  ├─ classes
+
+│  │  ├─ application.properties
+
+│  │  ├─ com
+
+│  │  │  └─ arpalink
+
+│  │  │     ├─ dao
+
+│  │  │     │  ├─ Databaseutil.class
+
+│  │  │     │  └─ UserDao.class
+
+│  │  │     └─ model
+
+│  │  │        └─ User.class
+
+│  │  ├─ schema.sql
+
+│  │  └─ static
+
+│  │     ├─ css
+
+│  │     │  └─ style.css
+
+│  │     ├─ index.html
+
+│  │     └─ js
+
+│  │        └─ script.js
+
+│  ├─ index.jsp
+
+│  ├─ m2e-wtp
+
+│  │  └─ web-resources
+
+│  │     └─ META-INF
+
+│  │        ├─ MANIFEST.MF
+
+│  │        └─ maven
+
+│  │           └─ com.arpalink
+
+│  │              └─ arpalink
+
+│  │                 ├─ pom.properties
+
+│  │                 └─ pom.xml
+
+│  ├─ maven-status
+
+│  │  └─ maven-compiler-plugin
+
+│  │     └─ compile
+
+│  │        └─ default-compile
+
+│  │           ├─ createdFiles.lst
+
+│  │           └─ inputFiles.lst
+
+│  └─ test-classes
+
+│     └─ profile.jsp
+
+└─ web.xml
 
 ## Requirements
 - Java Development Kit (JDK) 1.8 or higher
